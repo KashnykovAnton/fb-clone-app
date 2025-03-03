@@ -1,0 +1,417 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "avatar": "https://i.pravatar.cc/200",
+      "userName": "John Doe",
+      "dateTime": "2025-02-11 12:30:00",
+      "postText": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "images": [
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739239221/my_posts_images/01_ff9wgk.jpg",
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739239151/my_posts_images/02_khyj0f.jpg"
+      ],
+      "likes": 119,
+      "userLiked": false,
+      "comments": [
+        {
+          "avatar": "https://i.pravatar.cc/200",
+          "userName": "John Doe",
+          "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "dateTime": "2025-02-09 09:30:00",
+          "postId": "1"
+        },
+        {
+          "avatar": "https://i.pravatar.cc/190",
+          "userName": "David Smith",
+          "comment": "Necessitatibus ipsum a eos quaerat accusamus voluptatem numquam corrupti",
+          "dateTime": "2025-02-10 10:30:00",
+          "postId": "1"
+        },
+        {
+          "avatar": "https://i.pravatar.cc/200",
+          "userName": "John Doe",
+          "comment": "Test comment",
+          "dateTime": "2025-02-11 22:34",
+          "postId": "1"
+        },
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "Comment",
+          "dateTime": "2025-02-12 10:54",
+          "postId": "1"
+        },
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "Hello, where are you?",
+          "dateTime": "2025-02-18 12:51",
+          "postId": "1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "avatar": "https://i.pravatar.cc/190",
+      "userName": "David Smith",
+      "dateTime": "2025-02-10 11:30:00",
+      "postText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum a eos quaerat accusamus voluptatem numquam corrupti recusandae reprehenderit fugit, voluptates ex, ut dignissimos exercitationem debitis sapiente similique qui ipsam!",
+      "images": [
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739275847/my_posts_images/img_05_pwe6wk.webp"
+      ],
+      "likes": 12,
+      "userLiked": true,
+      "comments": []
+    },
+    {
+      "id": "3",
+      "avatar": "https://i.pravatar.cc/180",
+      "userName": "Anna White",
+      "dateTime": "2025-01-11 19:15:00",
+      "postText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum a eos quaerat accusamus voluptatem numquam corrupti recusandae reprehenderit fugit, voluptates ex, ut dignissimos exercitationem debitis sapiente similique qui ipsam!",
+      "images": [
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739275837/my_posts_images/img_04_sxiz39.jpg",
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739275819/my_posts_images/img_03_t5gv0d.jpg",
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739275112/my_posts_images/img_01_lezjxr.jpg"
+      ],
+      "likes": 41,
+      "userLiked": true,
+      "comments": []
+    },
+    {
+      "id": "P1tLRXNxuzAXFxEsereFA",
+      "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+      "userName": "Jack Black",
+      "dateTime": "2025-02-12 15:43",
+      "postText": "lorem ipsum. Lorem ipsum.",
+      "images": [
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739375045/my_posts_images/img_06_kytvta.jpg",
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739375054/my_posts_images/img_07_arhip5.jpg"
+      ],
+      "likes": 1,
+      "userLiked": false,
+      "comments": [
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "Test comment",
+          "dateTime": "2025-02-13 10:57",
+          "postId": "P1tLRXNxuzAXFxEsereFA"
+        },
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "Test 2",
+          "dateTime": "2025-02-13 10:57",
+          "postId": "P1tLRXNxuzAXFxEsereFA"
+        },
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "dfjknvkl;fnv;klen",
+          "dateTime": "2025-02-13 10:58",
+          "postId": "P1tLRXNxuzAXFxEsereFA"
+        }
+      ]
+    }
+  ],
+  "profile": {
+    "userName": "Jack Black",
+    "nickname": "jack",
+    "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+    "posts": 5,
+    "likes": 2,
+    "comments": 6,
+    "commentMessages": [
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "Comment",
+        "dateTime": "2025-02-12 10:54",
+        "postId": "1"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "Comment",
+        "dateTime": "2025-02-13 01:47",
+        "postId": "ytvhB0E0TEwMq88KkKoF7"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "Test comment",
+        "dateTime": "2025-02-13 10:57",
+        "postId": "P1tLRXNxuzAXFxEsereFA"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "Test 2",
+        "dateTime": "2025-02-13 10:57",
+        "postId": "P1tLRXNxuzAXFxEsereFA"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "dfjknvkl;fnv;klen",
+        "dateTime": "2025-02-13 10:58",
+        "postId": "P1tLRXNxuzAXFxEsereFA"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "Hello, where are you?",
+        "dateTime": "2025-02-18 12:51",
+        "postId": "1"
+      }
+    ],
+    "chatMessages": [
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "Hello!",
+        "dateTime": "2025-02-13 01:48"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "How are you?",
+        "dateTime": "2025-02-13 11:01"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "wjdnehckjw",
+        "dateTime": "2025-02-13 11:02"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/180",
+        "friendName": "Anna White",
+        "friendNickname": "anna",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "sdkjnckdjsn",
+        "dateTime": "2025-02-13 11:02"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "fvdfv\n",
+        "dateTime": "2025-02-18 01:25"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "Hello",
+        "dateTime": "2025-02-18 12:49"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "qwert",
+        "dateTime": "2025-02-18 12:50"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "djnck;ldnmcklmekl",
+        "dateTime": "2025-02-18 12:50"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200",
+        "friendName": "John Doe",
+        "friendNickname": "john",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "c lekdmvlkermvl,mr.er",
+        "dateTime": "2025-02-18 12:50"
+      }
+    ],
+    "isLoading": false,
+    "error": null
+  },
+  "friends": [
+    {
+      "id": "1",
+      "avatar": "https://i.pravatar.cc/200",
+      "userName": "John Doe",
+      "nickname": "john",
+      "messages": [
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendUserName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://i.pravatar.cc/200",
+          "userName": "John Doe",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "dateTime": "2025-02-09 09:30:00"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "Hello!",
+          "dateTime": "2025-02-13 01:48"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "How are you?",
+          "dateTime": "2025-02-13 11:01"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "wjdnehckjw",
+          "dateTime": "2025-02-13 11:02"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "fvdfv\n",
+          "dateTime": "2025-02-18 01:25"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "Hello",
+          "dateTime": "2025-02-18 12:49"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "qwert",
+          "dateTime": "2025-02-18 12:50"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "djnck;ldnmcklmekl",
+          "dateTime": "2025-02-18 12:50"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200",
+          "friendName": "John Doe",
+          "friendNickname": "john",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "c lekdmvlkermvl,mr.er",
+          "dateTime": "2025-02-18 12:50"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "avatar": "https://i.pravatar.cc/190",
+      "userName": "David Smith",
+      "nickname": "david",
+      "messages": []
+    },
+    {
+      "id": "3",
+      "avatar": "https://i.pravatar.cc/180",
+      "userName": "Anna White",
+      "nickname": "anna",
+      "messages": [
+        {
+          "friendAvatar": "https://i.pravatar.cc/180",
+          "friendName": "Anna White",
+          "friendNickname": "anna",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "sdkjnckdjsn",
+          "dateTime": "2025-02-13 11:02"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "birthDate": "1990-05-15",
+      "email": "john.doe@example.com",
+      "phone": "+1234567890",
+      "address": "123 Main St, Springfield, IL, USA"
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "birthDate": "1985-12-22",
+      "email": "jane.smith@example.com",
+      "phone": "+9876543210",
+      "address": "456 Elm St, Metropolis, NY, USA"
+    },
+    {
+      "id": "3",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "birthDate": "1995-08-30",
+      "email": "alice.johnson@example.com",
+      "phone": null,
+      "address": null
+    },
+    {
+      "id": "4",
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "birthDate": "1980-03-10",
+      "email": "bob.brown@example.com",
+      "phone": "+1122334455",
+      "address": "789 Oak St, Smalltown, TX, USA"
+    },
+    {
+      "id": "wCObiIZEBAoRfue3-fjeW",
+      "firstName": "Mike",
+      "lastName": "Vazovsky",
+      "birthDate": "2025-02-13",
+      "email": "mail@mail.com",
+      "phone": "dveve",
+      "address": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+:root {
+  --action-color: #426de6;
+  --action-hover-color: #173eae;
+  --main-text-color: #080808;
+  --text-color: #3e3e3e;
+  --gray-text-color: #494949;
+  --background-color: #f5f6f8;
+  --hover-button-color: #f6f6f6;
+  --border-color: #e1e1e1;
+  --green-color: #049353;
+  --red-color: #e74c3c;
+  --button-hover-color: #e0dfe7;
+  --transition: 0.3s ease;
+}

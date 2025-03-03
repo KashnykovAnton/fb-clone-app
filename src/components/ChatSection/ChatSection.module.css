@@ -1,0 +1,27 @@
+.chatSection {
+    height: 100vh;
+    width: 240px;
+    padding: 80px 24px 24px 24px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-left: 1px solid var(--border-color);
+  }
+
+.friendList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+.friendItem:hover {
+    background-color: var(--hover-button-color);
+    cursor: pointer;
+    border-radius: 16px;
+  }
