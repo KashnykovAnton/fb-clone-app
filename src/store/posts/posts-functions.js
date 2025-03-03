@@ -1,5 +1,4 @@
 export const handleFetchAllPosts = (state, { payload }) => {
-  console.log("in handleFetchAllPosts");
   state.posts = payload;
   state.isLoading = false;
 };

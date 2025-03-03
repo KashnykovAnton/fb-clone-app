@@ -6,7 +6,7 @@ import SkeletonPageMessagesList from "./SkeletonPageMessagesList";
 
 const PageMessagesList = () => {
   const chatMessages = useSelector(selectMessages);
-  const isLoading = useSelector(selectLoader); // Selector for the loading state
+  const isLoading = useSelector(selectLoader);
 
   if (isLoading) {
     return <SkeletonPageMessagesList />;

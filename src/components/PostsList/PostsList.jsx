@@ -20,7 +20,6 @@ const PostsList = () => {
         </Typography>
       )}
       {posts.map((post) => {
-        console.log("post.id", post.id);
         return (
         <Suspense key={post.id} fallback={<SkeletonPostItem />}>
           <PostItem postId={post.id} />

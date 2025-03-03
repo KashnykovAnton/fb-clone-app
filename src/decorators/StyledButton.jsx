@@ -11,7 +11,7 @@ const StyledPostButton = styled(Button)(() => ({
   border: "1px solid var(--border-color)",
   borderRadius: "12px",
   color: "var(--text-color)",
-  width: "120px",
+  minWidth: "120px",
   backgroundColor: "var(--background-color)",
   transition: "background-color var(--transition), color var(--transition)",
   "&:hover": {

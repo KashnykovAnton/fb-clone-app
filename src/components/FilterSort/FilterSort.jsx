@@ -1,15 +1,17 @@
 import { Box, TextField, MenuItem, Select, FormControl, Typography, Stack } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import { selectFilters, selectLoader } from "../../store/posts/posts-selectors";
+import { selectFilters, 
+  // selectLoader 
+} from "../../store/posts/posts-selectors";
 import { setCommentsFilter, setLikesFilter, setSort } from "../../store/posts/posts-slice-filter";
 import StyledCard from "../../decorators/StyledCard";
 import styledTextFieldHoc from "../../decorators/styledTextFieldHoc";
-import SkeletonFilterSort from "./SkeletonFilterSort";
+// import SkeletonFilterSort from "./SkeletonFilterSort";
 
 const FilterSort = () => {
   const dispatch = useDispatch();
   const { likesFilter, commentsFilter, sort } = useSelector(selectFilters);
-  const isLoading = useSelector(selectLoader)
+  // const isLoading = useSelector(selectLoader)
 
   const handleLikesChange = (e) => {
     const { name, value } = e.target;
@@ -28,9 +30,9 @@ const FilterSort = () => {
 
   const CustomTextField = styledTextFieldHoc(TextField);
 
-  if (isLoading) {
-    return <SkeletonFilterSort/>;
-  }
+  // if (isLoading) {
+  //   return <SkeletonFilterSort/>;
+  // }
 
   return (
     <StyledCard>

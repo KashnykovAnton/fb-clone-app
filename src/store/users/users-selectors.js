@@ -1,6 +1,7 @@
 import { createSelector } from "reselect";
 
 export const selectUsers = (state) => state.users.users;
+export const selectFriends = (state) => state.users.users.filter(user => user.isFriend);
 export const selectLoader = (state) => state.users.isLoading;
 export const selectUsersFilters = (state) => state.usersFilters;
 

@@ -9,10 +9,8 @@ import LoaderSpin from "./components/LoaderSpin/LoaderSpin.jsx";
 import MainLayout from "./components/MainLayout/MainLayout.jsx";
 import PostEdit from "./components/PostEdit/PostEdit.jsx";
 import { HomePage, CommentsPage, NotFoundPage, MessagesPage, AdminPage } from "./helpers/lazyLoading.js";
-import { useFetchInitialProfileData } from "./hooks/useFetchInitialData.js";
 
 function App() {
-  useFetchInitialProfileData();
   return (
     <Suspense fallback={<LoaderSpin />}>
       <CssBaseline>

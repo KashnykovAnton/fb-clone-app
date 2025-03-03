@@ -12,8 +12,8 @@ const SkeletonPostItem = () => {
           <Box display="flex" alignItems="center">
             <Skeleton variant="circular" width={40} height={40} sx={{ marginRight: 1 }} />
             <Box>
-              <Skeleton variant="text" width="80%" />
-              <Skeleton variant="text" width="50%" />
+              <Skeleton variant="text" width="50px" />
+              <Skeleton variant="text" width="50px" />
             </Box>
           </Box>
           <IconButton disabled>

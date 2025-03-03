@@ -9,3 +9,5 @@ export const CommentsPage = lazy(() => import("../pages/CommentsPage.jsx" /* web
 export const MessagesPage = lazy(() => import("../pages/MessagesPage.jsx" /* webpackChunkName: "messages-page" */));
 
 export const AdminPage = lazy(() => import("../pages/AdminPage.jsx" /* webpackChunkName: "admin-page" */));
+
+// export const MainLayout = lazy(() => import("../components/MainLayout/MainLayout.jsx" /* webpackChunkName: "main-layout" */));

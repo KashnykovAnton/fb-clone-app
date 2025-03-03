@@ -4,8 +4,6 @@ export const selectPosts = (state) => state.posts.posts;
 export const selectLoader = (state) => state.posts.isLoading;
 export const selectFilters = (state) => state.postsFilters;
 export const selectPostById = (postId) => (state) => {
-  console.log("postId in selector", postId);
-  console.log("state.posts.posts", state.posts.posts);
   return state.posts.posts.find((post) => post.id === postId);
 };
 

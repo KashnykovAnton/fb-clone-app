@@ -17,13 +17,9 @@ import { selectProfile } from "../../store/profile/profile-selectors";
 import { deletePost, updatePost } from "../../store/posts/posts-thunks";
 import { updateProfile } from "../../store/profile/profile-thunks";
 import { selectPostById } from "../../store/posts/posts-selectors";
-// import { selectLoader } from "../../store/posts/posts-selectors";
-// import SkeletonPostItem from "./SkeletonPostItem";
 
 const PostItem = ({ postId }) => {
-  console.log("postId in PostItem", postId);
   const post = useSelector(selectPostById(postId));
-  console.log("post", post);
   const { id, avatar, userName, dateTime, postText, images, comments } = post;
   const [anchorEl, setAnchorEl] = useState(null);
   const [comment, setComment] = useState("");
@@ -34,13 +30,6 @@ const PostItem = ({ postId }) => {
   const navigate = useNavigate();
 
   const profile = useSelector(selectProfile);
-  // const isLoading = useSelector(selectLoader);
-
-  // const isPostLoading = useSelector((state) => state.posts.postLoading[post.id]);
-
-  // if (isPostLoading) {
-  //   return <SkeletonPostItem />;
-  // }
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -111,10 +100,6 @@ const PostItem = ({ postId }) => {
     dispatch(updateProfile(updatedProfile));
     handleCloseCommentModal();
   };
-
-  // if (isLoading) {
-  //   return <SkeletonPostItem />;
-  // }
 
   return (
     <StyledCard sx={{ marginBottom: 3 }}>

@@ -6,7 +6,7 @@ import SkeletonPageCommentsList from "./SkeletonPageCommentsList";
 
 const PageCommentsList = () => {
   const commentMessages = useSelector(selectComments);
-  const isLoading = useSelector(selectLoader); // Selector for the loading state
+  const isLoading = useSelector(selectLoader);
 
   if (isLoading) {
     return <SkeletonPageCommentsList />;

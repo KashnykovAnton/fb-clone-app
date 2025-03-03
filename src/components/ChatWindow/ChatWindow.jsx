@@ -17,12 +17,22 @@ import { useDispatch, useSelector } from "react-redux";
 import { warningMessage } from "../../services/toasts";
 import { selectProfile } from "../../store/profile/profile-selectors";
 import { updateProfile } from "../../store/profile/profile-thunks";
+import { updateUser } from "../../store/users/users-thunks";
 
-const ChatWindow = ({ friend, onClose, onUpdateMessages }) => {
+const ChatWindow = ({ user, onClose }) => {
   const [message, setMessage] = useState("");
-  const [messages, setMessages] = useState(friend.messages || []);
+  const [messages, setMessages] = useState(user.messages || []);
   const profile = useSelector(selectProfile);
   const dispatch = useDispatch();
+
+  const handleUpdateMessages = (userId, newMessages) => {
+    const updatedUser = {
+      ...user,
+      messages: newMessages,
+    };
+
+    dispatch(updateUser({ id: userId, user: updatedUser }));
+  };
 
   const handleSendMessage = () => {
     if (!message.trim()) {
@@ -31,9 +41,9 @@ const ChatWindow = ({ friend, onClose, onUpdateMessages }) => {
     }
 
     const newMessage = {
-      friendAvatar: friend.avatar,
-      friendName: friend.userName,
-      friendNickname: friend.nickname,
+      friendAvatar: user.avatar,
+      friendName: user.firstName,
+      friendNickname: user.nickname,
       avatar: profile.avatar,
       userName: profile.userName,
       text: message,
@@ -42,7 +52,7 @@ const ChatWindow = ({ friend, onClose, onUpdateMessages }) => {
 
     const updatedMessages = [...messages, newMessage];
     setMessages(updatedMessages);
-    onUpdateMessages(friend.id, updatedMessages);
+    handleUpdateMessages(user.id, updatedMessages);
     const updatedProfile = {
       ...profile,
       chatMessages: [...profile.chatMessages, newMessage],
@@ -54,8 +64,8 @@ const ChatWindow = ({ friend, onClose, onUpdateMessages }) => {
   return (
     <Dialog open={true} onClose={onClose} fullWidth maxWidth="sm">
       <Box display="flex" alignItems="center" justifyContent="space-between" p={3}>
-        <Typography variant="h6">Chat with {friend.userName}</Typography>
-        <Avatar src={friend.avatar} sx={{ width: 40, height: 40, ml: 2 }} />
+        <Typography variant="h6">Chat with {user.firstName} {user.lastName}</Typography>
+        <Avatar src={user.avatar} sx={{ width: 40, height: 40, ml: 2 }} />
       </Box>
       <DialogContent
         sx={{

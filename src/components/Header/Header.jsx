@@ -7,8 +7,8 @@ import { AppBar, Avatar, IconButton, Menu, MenuItem, Stack, Toolbar, Typography 
 import AddPost from "../AddPost/AddPost";
 import UserSearch from "../UserSearch/UserSearch";
 import { selectProfile } from "../../store/profile/profile-selectors";
-import { selectLoader } from "../../store/posts/posts-selectors";
-import HeaderSkeleton from "./HeaderSkeleton";
+// import { selectLoader } from "../../store/posts/posts-selectors";
+// import HeaderSkeleton from "./HeaderSkeleton";
 
 const Header = () => {
   const { avatar, nickname } = useSelector(selectProfile);
@@ -18,7 +18,7 @@ const Header = () => {
 
   const location = useLocation();
   const isAdminPage = location.pathname === "/admin";
-  const isLoading = useSelector(selectLoader);
+  // const isLoading = useSelector(selectLoader);
   const open = Boolean(anchorEl);
 
   useEffect(() => {
@@ -29,25 +29,23 @@ const Header = () => {
   }, [anchorEl, navigate, navigateToAdmin]);
 
   const handleMenuOpen = (event) => {
-    console.log("event.currentTarget", event.currentTarget);
-    console.log("Menu is opened");
     setAnchorEl(event.currentTarget);
   };
 
   const handleMenuClose = () => {
     setAnchorEl(null);
-    console.log("Menu is closed");
   };
 
   const handleAdminView = () => {
-    console.log("Admin View is clicked");
     handleMenuClose();
-    navigate("/admin"); 
+    setTimeout(() => {
+      navigate("/admin");
+    }, 100);
   };
 
-  if (isLoading) {
-    return <HeaderSkeleton />;
-  }
+  // if (isLoading) {
+  //   return <HeaderSkeleton />;
+  // }
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "var(--action-color)", boxShadow: "none" }}>
@@ -64,12 +62,12 @@ const Header = () => {
 
         <Stack direction="row" gap={1}>
           <Avatar src={avatar} alt={nickname} />
-          <IconButton onClick={handleMenuOpen} sx={{ color: "white" }} aria-controls={open ? 'basic-menu' : undefined}>
+          <IconButton onClick={handleMenuOpen} sx={{ color: "white" }} aria-controls={open ? "basic-menu" : undefined}>
             <MoreVertIcon />
           </IconButton>
         </Stack>
 
-        <Menu  id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleMenuClose}>
+        <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleMenuClose}>
           <MenuItem onClick={handleAdminView}>Admin View</MenuItem>
         </Menu>
       </Toolbar>

@@ -12,7 +12,7 @@
     border-left: 1px solid var(--border-color);
   }
 
-.friendList {
+.userList {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
     gap: 16px;
   }
 
-.friendItem:hover {
+.userItem:hover {
     background-color: var(--hover-button-color);
     cursor: pointer;
     border-radius: 16px;
