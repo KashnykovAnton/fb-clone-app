@@ -1,18 +1,28 @@
 import React from "react";
-import { Box, Typography, List, Skeleton } from "@mui/material";
+import { Box, Typography, List, Skeleton, ListItem, ListItemAvatar, ListItemText, Divider } from "@mui/material";
 
 const SkeletonPageCommentsList = () => {
+  const skeletonCount = 5;
+
   return (
     <Box sx={{ maxWidth: 600, p: 3, backgroundColor: "white", borderRadius: "16px" }}>
-      <Typography variant="h4" sx={{ mb: 3, textAlign: "center" }}>
-        <Skeleton variant="text" width="80%" height={40} />
-      </Typography>
-
       <List>
-        {[...Array(5)].map((_, index) => (
-          <Box key={index} sx={{ display: "flex", flexDirection: "column", marginBottom: 2 }}>
-            <Skeleton variant="text" width="100%" height={40} />
-            <Skeleton variant="text" width="80%" height={20} />
+        {Array.from({ length: skeletonCount }).map((_, index) => (
+          <Box>
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Skeleton variant="circular" width={40} height={40} />
+              </ListItemAvatar>
+              <ListItemText
+                primary={<Skeleton variant="text" width={100} height={20} />}
+                secondary={
+                  <Typography variant="body2">
+                    <Skeleton variant="text" width={150} height={16} />
+                  </Typography>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" component="li" />
           </Box>
         ))}
       </List>

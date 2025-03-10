@@ -1,13 +1,18 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Avatar, Badge, Box, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
-import { selectFriends } from "../../store/users/users-selectors";
+import { selectFriends, selectLoader } from "../../store/users/users-selectors";
 import ChatWindow from "../ChatWindow/ChatWindow";
 import styles from "./ChatSection.module.css";
+import { useFetchInitialUsersData } from "../../hooks/useFetchInitialData";
+import SkeletonChatSection from "./SkeletonChatSection";
 
 const ChatSection = () => {
   const users = useSelector(selectFriends);
+  const isLoading = useSelector(selectLoader);
   const [selectedUser, setSelectedUser] = useState(null);
+
+  useFetchInitialUsersData();
 
   const handleOpenChat = (user) => {
     setSelectedUser(user);
@@ -20,7 +25,9 @@ const ChatSection = () => {
   return (
     <Box className={styles.chatSection}>
       <Typography variant="h6">Friends</Typography>
-      {users.length === 0 ? (
+      {isLoading ? (
+        <SkeletonChatSection />
+      ) : users.length === 0 ? (
         <Typography variant="body1">You don't have friends</Typography>
       ) : (
         <List className={styles.userList}>

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Stack, IconButton, Typography } from "@mui/material";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
+import NumberFlow from "@number-flow/react";
 import { selectProfile } from "../../store/profile/profile-selectors";
 import { updatePost } from "../../store/posts/posts-thunks";
 import { updateProfile } from "../../store/profile/profile-thunks";
@@ -43,7 +44,9 @@ const CommentsLikeButton = React.memo(({ post }) => {
         <IconButton onClick={handleLike}>
           {liked ? <ThumbUpAltIcon sx={{ color: "var(--red-color)" }} /> : <ThumbUpOffAltIcon />}
         </IconButton>
-        <Typography variant="body2">{likeCount}</Typography>
+        <Typography variant="body2">
+          <NumberFlow value={likeCount} />
+        </Typography>
       </Stack>
     </Stack>
   );

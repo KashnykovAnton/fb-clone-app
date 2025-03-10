@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Avatar, Box, CardContent, IconButton, Stack, Typography } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import CommentIcon from "@mui/icons-material/Comment";
+import NumberFlow from "@number-flow/react";
 import StyledCard from "../../decorators/StyledCard";
 import { warningMessage } from "../../services/toasts";
 import CommentsViewSection from "../CommentsViewSection/CommentsViewSection";
@@ -146,7 +147,9 @@ const PostItem = ({ postId }) => {
             <IconButton disabled>
               <CommentIcon />
             </IconButton>
-            <Typography variant="body2">{comments.length}</Typography>
+            <Typography variant="body2">
+              <NumberFlow value={comments.length} />
+            </Typography>
           </Stack>
         </Stack>
       </CardContent>

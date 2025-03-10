@@ -1,18 +1,18 @@
 import { Avatar, Box, Stack, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
-import { selectProfile } from "../../store/profile/profile-selectors";
+import NumberFlow from "@number-flow/react";
+import { selectCommentsCount, selectLikesCount, selectProfile } from "../../store/profile/profile-selectors";
 import { selectPosts } from "../../store/posts/posts-selectors";
 import SkeletonUserInfo from "./SkeletonUserInfo";
-import { useFetchInitialProfileData } from "../../hooks/useFetchInitialData";
 import { Suspense } from "react";
 
 const UserInfo = () => {
   const profile = useSelector(selectProfile);
   const posts = useSelector(selectPosts);
-  const { avatar, userName, nickname, likes, comments } = profile;
+  const likes = useSelector(selectLikesCount);
+  const comments = useSelector(selectCommentsCount);
+  const { avatar, userName, nickname } = profile;
   const personalPosts = posts.filter((post) => post.userName === userName);
-
-  useFetchInitialProfileData();
 
   return (
     <Suspense fallback={<SkeletonUserInfo />}>
@@ -32,7 +32,7 @@ const UserInfo = () => {
         <Stack direction="row" justifyContent="space-between" mt={2}>
           <Box textAlign="center">
             <Typography variant="subtitle1" fontWeight={700}>
-              {personalPosts.length}
+              <NumberFlow value={personalPosts.length} />
             </Typography>
             <Typography variant="caption" color="text.secondary">
               Posts
@@ -40,7 +40,7 @@ const UserInfo = () => {
           </Box>
           <Box textAlign="center">
             <Typography variant="subtitle1" fontWeight={700}>
-              {likes}
+              <NumberFlow value={likes} />
             </Typography>
             <Typography variant="caption" color="text.secondary">
               Likes
@@ -48,7 +48,7 @@ const UserInfo = () => {
           </Box>
           <Box textAlign="center">
             <Typography variant="subtitle1" fontWeight={700}>
-              {comments}
+              <NumberFlow value={comments} />
             </Typography>
             <Typography variant="caption" color="text.secondary">
               Comments

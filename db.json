@@ -47,6 +47,20 @@
           "comment": "Hello, where are you?",
           "dateTime": "2025-02-18 12:51",
           "postId": "1"
+        },
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "cwkjdbvckjew",
+          "dateTime": "2025-03-10 02:18",
+          "postId": "1"
+        },
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "wjehbdcwejmn",
+          "dateTime": "2025-03-10 02:18",
+          "postId": "1"
         }
       ]
     },
@@ -76,7 +90,15 @@
       ],
       "likes": 41,
       "userLiked": true,
-      "comments": []
+      "comments": [
+        {
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "comment": "test ",
+          "dateTime": "2025-03-10 02:02",
+          "postId": "3"
+        }
+      ]
     },
     {
       "id": "P1tLRXNxuzAXFxEsereFA",
@@ -119,9 +141,9 @@
     "userName": "Jack Black",
     "nickname": "jack",
     "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
-    "posts": 5,
+    "posts": 6,
     "likes": 2,
-    "comments": 6,
+    "comments": 9,
     "commentMessages": [
       {
         "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
@@ -164,6 +186,27 @@
         "comment": "Hello, where are you?",
         "dateTime": "2025-02-18 12:51",
         "postId": "1"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "test ",
+        "dateTime": "2025-03-10 02:02",
+        "postId": "3"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "cwkjdbvckjew",
+        "dateTime": "2025-03-10 02:18",
+        "postId": "1"
+      },
+      {
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "comment": "wjehbdcwejmn",
+        "dateTime": "2025-03-10 02:18",
+        "postId": "1"
       }
     ],
     "chatMessages": [
@@ -202,6 +245,69 @@
         "userName": "Jack Black",
         "text": "Good morning ))",
         "dateTime": "2025-03-03 03:14"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200?img=47",
+        "friendName": "Alice",
+        "friendNickname": "alicejohnson",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "Hello! How are you?",
+        "dateTime": "2025-03-03 10:04"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200?img=47",
+        "friendName": "Alice",
+        "friendNickname": "alicejohnson",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "Hello again",
+        "dateTime": "2025-03-03 10:04"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/150?img=65",
+        "friendName": "John",
+        "friendNickname": "johndoe",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "Good day\n",
+        "dateTime": "2025-03-03 10:05"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200?img=7",
+        "friendName": "John",
+        "friendNickname": "johndoe",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "test",
+        "dateTime": "2025-03-10 02:09"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200?img=7",
+        "friendName": "John",
+        "friendNickname": "johndoe",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "one more",
+        "dateTime": "2025-03-10 02:09"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200?img=7",
+        "friendName": "John",
+        "friendNickname": "johndoe",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "gbb td",
+        "dateTime": "2025-03-10 02:09"
+      },
+      {
+        "friendAvatar": "https://i.pravatar.cc/200?img=7",
+        "friendName": "John",
+        "friendNickname": "johndoe",
+        "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+        "userName": "Jack Black",
+        "text": "nbtenet",
+        "dateTime": "2025-03-10 02:09"
       }
     ],
     "isLoading": false,
@@ -218,7 +324,7 @@
       "phone": "+1234567890",
       "address": "123 Main St, Springfield, IL, USA",
       "isFriend": true,
-      "avatar": "https://i.pravatar.cc/150?img=65",
+      "avatar": "https://i.pravatar.cc/200?img=7",
       "messages": [
         {
           "friendAvatar": "https://i.pravatar.cc/150?img=65",
@@ -246,6 +352,51 @@
           "userName": "Jack Black",
           "text": "Test",
           "dateTime": "2025-03-03 03:14"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/150?img=65",
+          "friendName": "John",
+          "friendNickname": "johndoe",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "Good day\n",
+          "dateTime": "2025-03-03 10:05"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200?img=7",
+          "friendName": "John",
+          "friendNickname": "johndoe",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "test",
+          "dateTime": "2025-03-10 02:09"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200?img=7",
+          "friendName": "John",
+          "friendNickname": "johndoe",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "one more",
+          "dateTime": "2025-03-10 02:09"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200?img=7",
+          "friendName": "John",
+          "friendNickname": "johndoe",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "gbb td",
+          "dateTime": "2025-03-10 02:09"
+        },
+        {
+          "friendAvatar": "https://i.pravatar.cc/200?img=7",
+          "friendName": "John",
+          "friendNickname": "johndoe",
+          "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+          "userName": "Jack Black",
+          "text": "nbtenet",
+          "dateTime": "2025-03-10 02:09"
         }
       ]
     },
@@ -259,7 +410,7 @@
       "phone": "+9876543210",
       "address": "456 Elm St, Metropolis, NY, USA",
       "isFriend": true,
-      "avatar": "https://i.pravatar.cc/200?img=13",
+      "avatar": "https://i.pravatar.cc/200?img=14",
       "messages": [
         {
           "friendAvatar": "https://i.pravatar.cc/200?img=13",
@@ -273,43 +424,42 @@
       ]
     },
     {
-      "id": "3",
-      "firstName": "Alice",
-      "lastName": "Johnson",
-      "nickname": null,
-      "birthDate": "1995-08-30",
-      "email": "alice.johnson@example.com",
-      "phone": null,
-      "address": null,
-      "isFriend": false,
-      "avatar": null,
-      "messages": []
-    },
-    {
       "id": "4",
       "firstName": "Bob",
       "lastName": "Brown",
-      "nickname": null,
+      "nickname": "bobbrown",
       "birthDate": "1980-03-10",
       "email": "bob.brown@example.com",
       "phone": "+1122334455",
       "address": "789 Oak St, Smalltown, TX, USA",
       "isFriend": false,
-      "avatar": null,
+      "avatar": "https://i.pravatar.cc/200?img=50",
       "messages": []
     },
     {
       "id": "wCObiIZEBAoRfue3-fjeW",
       "firstName": "Mike",
       "lastName": "Vazovsky",
-      "nickname": null,
+      "nickname": "mikevazovsky",
       "birthDate": "2025-02-13",
       "email": "mail@mail.com",
       "phone": "dveve",
       "address": "",
       "isFriend": false,
-      "avatar": null,
+      "avatar": "https://i.pravatar.cc/200?img=11",
       "messages": []
+    },
+    {
+      "id": "qktRedJQYZsMlkfl7mO_t",
+      "firstName": "Alice",
+      "lastName": "Couper",
+      "birthDate": "1997-03-01",
+      "email": "alice@mail.com",
+      "phone": "+123-456-789",
+      "address": "USA",
+      "nickname": "alicecouper",
+      "isFriend": false,
+      "avatar": "https://i.pravatar.cc/200?img=62"
     }
   ]
 }

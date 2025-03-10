@@ -10,7 +10,6 @@ import {
   Typography,
   Divider,
   IconButton,
-  Collapse,
   Fade,
 } from "@mui/material";
 import PostMenu from "../PostMenu/PostMenu";
@@ -29,18 +28,26 @@ const UserItem = ({ user, index, length }) => {
 
   const dispatch = useDispatch();
 
-  const handlAskFriend = () => {
+  const updateFriendshipStatus = (isFriend) => {
     const updatedUser = {
       ...user,
-      nickname: `${(user.firstName + user.lastName).toLowerCase()}`,
-      avatar: `https://i.pravatar.cc/200?img=${Math.floor(Math.random() * 70) + 1}`,
-      isFriend: true,
+      nickname: isFriend ? `${(user.firstName + user.lastName).toLowerCase()}` : user.nickname,
+      avatar: !user.avatar ? `https://i.pravatar.cc/200?img=${Math.floor(Math.random() * 70) + 1}` : user.avatar,
+      isFriend,
     };
-    setTimeout(() => {
-      dispatch(updateUser({ id: user.id, user: updatedUser }));
-      infoMessage(`Friend ${user.firstName} ${user.lastName} accept your request for friendship`);
-      setShowDetails(true);
-    }, 2000);
+
+    setTimeout(
+      () => {
+        dispatch(updateUser({ id: user.id, user: updatedUser }));
+        infoMessage(
+          isFriend
+            ? `Friend ${user.firstName} ${user.lastName} accepted your request for friendship`
+            : `User ${user.firstName} ${user.lastName} was removed from your friends`
+        );
+        setShowDetails(isFriend);
+      },
+      isFriend ? 2000 : 0
+    );
   };
 
   const handleMenuOpen = (event) => {
@@ -78,6 +85,7 @@ const UserItem = ({ user, index, length }) => {
     setIsDialogOpen(false);
   };
 
+
   return (
     <Box key={user.id}>
       <ListItem alignItems="flex-start" sx={{ position: "relative", flexDirection: "column", alignItems: "stretch" }}>
@@ -113,11 +121,12 @@ const UserItem = ({ user, index, length }) => {
           onDeleteClick={handleDeleteClick}
         />
 
-        {!showDetails ? (
-          <Box sx={{ display: "flex", justifyContent: "center", width: "100%", mt: 1 }}>
-            <StyledButton onClick={handlAskFriend} text="Ask for friendship" />
-          </Box>
-        ) : null}
+        <Box sx={{ display: "flex", justifyContent: "center", width: "100%", mt: 1 }}>
+          <StyledButton
+            onClick={() => updateFriendshipStatus(!showDetails)}
+            text={showDetails ? "Forget the friend" : "Ask for friendship"}
+          />
+        </Box>
       </ListItem>
 
       {index < length - 1 && <Divider variant="inset" component="li" />}

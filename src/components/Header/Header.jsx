@@ -7,8 +7,6 @@ import { AppBar, Avatar, IconButton, Menu, MenuItem, Stack, Toolbar, Typography 
 import AddPost from "../AddPost/AddPost";
 import UserSearch from "../UserSearch/UserSearch";
 import { selectProfile } from "../../store/profile/profile-selectors";
-// import { selectLoader } from "../../store/posts/posts-selectors";
-// import HeaderSkeleton from "./HeaderSkeleton";
 
 const Header = () => {
   const { avatar, nickname } = useSelector(selectProfile);
@@ -18,7 +16,6 @@ const Header = () => {
 
   const location = useLocation();
   const isAdminPage = location.pathname === "/admin";
-  // const isLoading = useSelector(selectLoader);
   const open = Boolean(anchorEl);
 
   useEffect(() => {
@@ -42,10 +39,6 @@ const Header = () => {
       navigate("/admin");
     }, 100);
   };
-
-  // if (isLoading) {
-  //   return <HeaderSkeleton />;
-  // }
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "var(--action-color)", boxShadow: "none" }}>

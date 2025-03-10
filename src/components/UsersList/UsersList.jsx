@@ -1,22 +1,16 @@
 import { useSelector } from "react-redux";
 import { Box, List, Typography } from "@mui/material";
 import UserItem from "../UserItem/UserItem";
-import { selectFilteredUsers, 
-  // selectLoader 
-} from "../../store/users/users-selectors";
+import { selectFilteredUsers, selectLoader } from "../../store/users/users-selectors";
 import { useFetchInitialUsersData } from "../../hooks/useFetchInitialData";
-import { Suspense } from "react";
 import SkeletonUsersList from "./SkeletonUsersList";
 
 const UsersList = () => {
   const users = useSelector(selectFilteredUsers);
-  // const isLoading = useSelector(selectLoader);
+  const isLoading = useSelector(selectLoader);
+
 
   useFetchInitialUsersData();
-
-  // if (isLoading) {
-  //   return <SkeletonUsersList />;
-  // }
 
   return (
     <Box sx={{ width: 500, p: 3, backgroundColor: "white", borderRadius: "16px", mb: 3 }}>
@@ -24,19 +18,19 @@ const UsersList = () => {
         User Management
       </Typography>
 
-      <List>
-        {users.length === 0 ? (
-          <span variant="body1" sx={{ textAlign: "center" }}>
-            No users yet.
-          </span>
-        ) : (
-          users.map((user, index) => (
-            <Suspense fallback={<SkeletonUsersList />}>
-              <UserItem key={user.id} user={user} index={index} length={users.length} />
-            </Suspense>
-          ))
-        )}
-      </List>
+      {isLoading ? (
+        <SkeletonUsersList />
+      ) : users.length === 0 ? ( 
+        <Typography variant="body1" sx={{ textAlign: "center" }}>
+          No users yet.
+        </Typography>
+      ) : (
+        <List>
+          {users.map((user, index) => (
+            <UserItem key={user.id} user={user} index={index} length={users.length} />
+          ))}
+        </List>
+      )}
     </Box>
   );
 };
