@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemAvatar, ListItemText, Skeleton, Divider, Typography } from "@mui/material";
+import { Box, List, ListItem, ListItemAvatar, ListItemText, Skeleton, Divider } from "@mui/material";
 
 const SkeletonUsersList = () => {
   const skeletonCount = 5;
