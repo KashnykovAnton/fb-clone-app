@@ -135,13 +135,26 @@
           "postId": "P1tLRXNxuzAXFxEsereFA"
         }
       ]
+    },
+    {
+      "id": "XEx25j4JNqsg6XfKfM-5z",
+      "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
+      "userName": "Jack Black",
+      "dateTime": "2025-03-11 23:26",
+      "postText": "Test post",
+      "images": [
+        "https://res.cloudinary.com/dm4vi26ml/image/upload/v1741735614/my_posts_images/img_07_fpaiee.jpg"
+      ],
+      "likes": 0,
+      "userLiked": false,
+      "comments": []
     }
   ],
   "profile": {
     "userName": "Jack Black",
     "nickname": "jack",
     "avatar": "https://res.cloudinary.com/dm4vi26ml/image/upload/v1739281504/my_posts_avatars/avatar-pokemon_we08pj.png",
-    "posts": 6,
+    "posts": 7,
     "likes": 2,
     "comments": 9,
     "commentMessages": [
@@ -409,7 +422,7 @@
       "email": "jane.smith@example.com",
       "phone": "+9876543210",
       "address": "456 Elm St, Metropolis, NY, USA",
-      "isFriend": true,
+      "isFriend": false,
       "avatar": "https://i.pravatar.cc/200?img=14",
       "messages": [
         {
@@ -435,31 +448,6 @@
       "isFriend": false,
       "avatar": "https://i.pravatar.cc/200?img=50",
       "messages": []
-    },
-    {
-      "id": "wCObiIZEBAoRfue3-fjeW",
-      "firstName": "Mike",
-      "lastName": "Vazovsky",
-      "nickname": "mikevazovsky",
-      "birthDate": "2025-02-13",
-      "email": "mail@mail.com",
-      "phone": "dveve",
-      "address": "",
-      "isFriend": false,
-      "avatar": "https://i.pravatar.cc/200?img=11",
-      "messages": []
-    },
-    {
-      "id": "qktRedJQYZsMlkfl7mO_t",
-      "firstName": "Alice",
-      "lastName": "Couper",
-      "birthDate": "1997-03-01",
-      "email": "alice@mail.com",
-      "phone": "+123-456-789",
-      "address": "USA",
-      "nickname": "alicecouper",
-      "isFriend": false,
-      "avatar": "https://i.pravatar.cc/200?img=62"
     }
   ]
 }
